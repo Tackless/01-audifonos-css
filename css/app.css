@@ -234,8 +234,15 @@ img {
 }
 
 /* Modelos */
-.modelos {
-    padding: var(--separacion);
+.contenedor-modelos {
+    padding: var(--separacion) 1rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-modelos {
+        padding: var(--separacion);
+    }
 }
 
 .header-modelos {
@@ -269,7 +276,7 @@ img {
     justify-content: center;
     background-repeat: no-repeat;
     background-position: 90% center;
-    background-size: 15rem;
+    background-size: 10rem;
     transition-property: transform;
     transition-duration: .3s;
 }
@@ -277,6 +284,12 @@ img {
 .modelo:hover {
     transform: scale(1.1);
     /* background-size: 30rem; */
+}
+
+@media (min-width: 768px) {
+    .modelo {
+        background-size: 15rem;
+    }
 }
 
 @media (min-width: 992px) {
